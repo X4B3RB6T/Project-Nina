@@ -1,4 +1,4 @@
-Install the following modules using the (pip command) :
+Install the following requirements using the (pip command) :
 --------------------------------------------------------
 
 1. For app.py file
