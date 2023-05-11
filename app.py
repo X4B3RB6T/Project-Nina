@@ -19,7 +19,7 @@ if uploaded_file is not None:
     data = bytes_data.decode("utf-8")
     df = preprocessor.preprocess(data)
     with st.spinner('`Almost there ... Read something interesting while we process your request `'):
-        time.sleep(5)
+        time.sleep(2)
 
     # fetch unique users
     user_list = df['user'].unique().tolist()
@@ -246,8 +246,8 @@ if uploaded_file is not None:
     ### ***:blue[Reach out to me :]***
     ------------------------
     ''')
-    txt2('Download the source code ', 'http://localhost:8501/')
-    txt2('Email  ', '**adityasighamber7@gmail.com**')
+    txt2('Download the source code ', 'https://github.com/X4B3RB6T/Project-Nina')
+    txt2('Email  ', 'adityasighamber7@gmail.com')
     txt2('Instagram ', 'https://www.instagram.com/aditya_singhamber/')
     txt2('LinkedIn ', 'https://in.linkedin.com/in/aditya-singh-amber-6b6b3a1b6')
     txt2('Github Profile link', 'https://github.com/X4B3RB6T')
