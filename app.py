@@ -210,13 +210,13 @@ if uploaded_file is not None:
     st.info('''
     - Nina is a simple  yet effective tool for (***Data Analysis***)  which can be used in the field of data science for data analytics and representation.
     - Nina uses the feature of (***Sentiment Analysis***) using the python (***nltk (Natural Language Toolkit)***) which uses Natural Language Processing libraries. 
-    - Feel free to navigate around and explore  the various features ,functionalities ,applications  and  modules of this project.
+    - Feel free to navigate around and explore  the various features ,functionalities ,applications  and libraries of this project.
     - These tools can be used in the fields of machine learning , deep learning , and artificial intelligence. 
     - These types of software are high in demand as these are used along with the cutting edge technologies and are used by the most of the big tech giants (Google,Microsoft,Meta,Reddit,LinkedIn,Twitter,Twitch ,etc..) as well as non tech firms sice decades.
     ''')
 
     st.error('''
-    #### *Modules used in the project :*
+    #### *Libraries & modules used in the project :*
 
     - **Pandas** , **Streamlit** ,**Regular Expressions** ,**Matplotlib** ,**Seaborn**, **Natural Language Toolkit** 
     - **Urlextract**, **Wordcloud**, **Collections** ,**Emoji** ,**Python Imaging Library** ,**Time**
