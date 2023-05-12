@@ -230,7 +230,6 @@ if uploaded_file is not None:
     - Education (ED-TECH industries) & Innovation 
     - E-Commerce & Businesses,Startups
     - Scientific research and Experiments
-    - Basic surveillance and monitering 
     - And " MANY MORE "
     
     ''')
