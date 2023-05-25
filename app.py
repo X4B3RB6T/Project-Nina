@@ -20,7 +20,7 @@ if uploaded_file is not None:
     data = bytes_data.decode("utf-8")
     df = preprocessor.preprocess(data)
     with st.spinner('`Almost there ... Read something interesting while we process your request `'):
-        time.sleep(2)
+        time.sleep(3)
 
     # fetch unique users
     user_list = df['user'].unique().tolist()
@@ -74,7 +74,7 @@ if uploaded_file is not None:
         st.markdown('''----''')
 
         # activity map
-        st.title(':blue[Activity Map]')
+        st.title(':blue[Activity Map]🗺️')
         col1,col2 = st.columns(2)
 
         with col1:
@@ -180,7 +180,7 @@ if uploaded_file is not None:
 
         # emoji analysis
         emoji_df = helper.emoji_helper(selected_user, df)
-        st.title("Emoji Analysis 🔍")
+        st.title(":blue[Emoji Analysis] 🔍")
 
         col1, col2 = st.columns(2)
 
@@ -209,29 +209,28 @@ if uploaded_file is not None:
 
     st.markdown('## *`About project Nina`*  ', unsafe_allow_html=True)
     st.info('''
-    - Nina is a simple  yet effective tool for (***Data Analysis***)  which can be used in the field of data science for data analytics and representation.
-    - Nina uses the feature of (***Sentiment Analysis***) using the python (***nltk (Natural Language Toolkit)***) which uses Natural Language Processing libraries. 
-    - Feel free to navigate around and explore  the various features ,functionalities ,applications  and libraries of this project.
-    - These tools can be used in the fields of machine learning , deep learning , and artificial intelligence. 
-    - These types of software are high in demand as these are used along with the cutting edge technologies and are used by the most of the big tech giants (Google,Microsoft,Meta,Reddit,LinkedIn,Twitter,Twitch ,etc..) as well as non tech firms sice decades.
+    - Nina is a simple yet concisely effective tool for (***Data Science***) projects like business analytics , data analytics , data engineering , machine learning , etc...
+    - Nina uses the feature of (***Sentiment Analysis***) using the ***nltk (Natural Language Toolkit)*** Vader which uses Natural Language Processing Libraries to parse and process the data. 
+    - These tools can be used with machine learning & deep learning algorithms. 
+    - These types of software are high in demand as these can work effortlessly with the cutting edge technologies that are used by the  big tech giants (Google,Microsoft,Meta,Reddit,LinkedIn,Twitter,Twitch ,etc..) as well as others sice decades.
+    - Feel free to navigate around and explore  the various features ,functionalities ,applications  and  libraries of this project.
     ''')
 
     st.error('''
-    #### *Libraries & modules used in the project :*
+    #### *Libraries & Modules used in the project :*
 
-    - **Pandas** , **Streamlit** ,**Regular Expressions** ,**Matplotlib** ,**Seaborn**, **Natural Language Toolkit** 
-    - **Urlextract**, **Wordcloud**, **Collections** ,**Emoji** ,**Python Imaging Library** ,**Time**
+    - **Pandas** , **Streamlit** , **Regular Expressions** , **Matplotlib** ,**Seaborn** , **Vader** 
+    - **Urlextract** , **Wordcloud** , **Collections** , **Emoji** 
     ''')
     st.warning('''
     #### *Areas where project Nina can be used :*
 
-    - Medical research 
     - Social media and other entertainment industries 
     - Education (ED-TECH industries) & Innovation 
     - E-Commerce & Businesses,Startups
     - Scientific research and Experiments
-    - And " MANY MORE "
-    
+    - Surveillance(Threat monitoring) and Intelligence 
+    - And " MANY MORE " 
     ''')
 
     def txt2(a, b):
